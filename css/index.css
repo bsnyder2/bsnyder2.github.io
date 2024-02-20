@@ -1,44 +1,94 @@
 h1 {
+  /* font-family: monospace; */
+  text-align: center;
+  color: white;
+  margin-top: 0px;
+  padding-top: 0.67em;
+  font-size: 40px;
+  text-shadow: 4px 4px 2px black;
+  font-family: serif;
+}
+
+#flexcont {
+  display: flex;
+}
+
+#halfbg {
+  position: absolute;
+  z-index: -1;
+  width: 50%;
+  height: 100%;
+  background-image: url("/assets/img/bgsphere.gif");
+}
+
+#otherbg {
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  background-image: url("/assets/emma31.tripod.com/backs6/bgtancrack.gif");
+}
+
+#half {
+  width: 50%;
+  float: left;
+}
+
+#other {
+  left: 50%;
+  width: 50%;
+}
+
+#introtext {
+  margin: auto;
+  margin-top: 32px;
+  padding: 20px;
+  width: 60%;
+  max-width: 600px;
+  font-size: 12pt;
   font-family: monospace;
+  background-color: aliceblue;
+}
+
+#welcome {
   text-align: center;
 }
 
-p {
-  font-family: monospace;
+#welcomepic {
+  width: 500px;
+}
+
+body {
+  margin: 0px;
 }
 
 #message {
   text-align: center;
 }
 
-#crtwrapper {
-  margin: auto;
-  width: 40%;
-  height: 100%;
-  max-width: 300px;
-}
-
 #crtbox {
-  float: left;
-  padding-bottom: 75%;
-  width: 100%;
-  height: 100%;
-  background-color: black;
+  text-align: center;
 }
 
-#links {
+#crt {
+  width: 40%;
+  max-width: 400px;
+  border: 10px ridge limegreen;
+}
+
+/* #links {
   float: left;
   margin-left: 5%;
+} */
+#emmabanner {
+  text-align: center;
 }
 
 #clipoftheweek {
   text-align: center;
 }
 
-a:hover {
-  background-color: green;
-}
-
-* {
+/* * {
   outline: 1px solid red !important;
-}
+} */
