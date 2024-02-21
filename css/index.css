@@ -1,5 +1,4 @@
 h1 {
-  /* font-family: monospace; */
   text-align: center;
   color: white;
   margin-top: 0px;
@@ -17,17 +16,17 @@ h1 {
   position: absolute;
   z-index: -1;
   width: 50%;
-  height: 100%;
-  background-image: url("/assets/img/bgsphere.gif");
+  height: 150%;
+  background-image: url("/assets/img/backgrounds-with-emma/bgsphere.gif");
 }
 
 #otherbg {
   position: absolute;
   z-index: -1;
-  left: 50%;
   width: 50%;
-  height: 100%;
-  background-image: url("/assets/emma31.tripod.com/backs6/bgtancrack.gif");
+  height: 150%;
+  left: 50%;
+  background-image: url("/assets/img/backgrounds-with-emma/bgtancrack.gif");
 }
 
 #half {
@@ -40,15 +39,16 @@ h1 {
   width: 50%;
 }
 
-#introtext {
+.paper {
   margin: auto;
   margin-top: 32px;
-  padding: 20px;
+  padding: 20px 30px;
   width: 60%;
   max-width: 600px;
   font-size: 12pt;
-  font-family: monospace;
+  font-family: "Luminari";
   background-color: aliceblue;
+  box-shadow: 8px 8px 2px black;
 }
 
 #welcome {
