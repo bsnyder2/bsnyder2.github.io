@@ -12,12 +12,22 @@ h1 {
   display: flex;
 }
 
-#halfbg {
-  position: absolute;
+body {
+  /* position: absolute;
   z-index: -1;
   width: 50%;
-  height: 150%;
-  background-image: url("/assets/img/backgrounds-with-emma/bgsphere.gif");
+  height: 150%; */
+  background-image: url("/assets/emma31.tripod.com/backs/bgnebula.gif");
+  /* background-image: url("/assets/emma31.tripod.com/backs/bgbluestars.gif"); */
+  /* background-image: url("/assets/emma31.tripod.com/backs/Galaxy0.gif"); */
+  /* background-image: url("/assets/emma31.tripod.com/backs/greensparkle.gif"); */
+  /* background-image: url("/assets/emma31.tripod.com/backs/purplestars.gif"); */
+  /* background-image: url("/assets/emma31.tripod.com/backs/design.gif"); */
+  background-image: url("/assets/emma31.tripod.com/backs/space2.gif");
+}
+
+body {
+  /* background-image: url("/assets/emma31.tripod.com/backs/space2.gif"); */
 }
 
 #otherbg {
@@ -26,7 +36,7 @@ h1 {
   width: 50%;
   height: 150%;
   left: 50%;
-  background-image: url("/assets/img/backgrounds-with-emma/bgtancrack.gif");
+  /* background-image: url("/assets/img/backgrounds-with-emma/bgtancrack.gif"); */
 }
 
 #half {
