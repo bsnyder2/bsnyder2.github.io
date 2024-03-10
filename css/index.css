@@ -6,6 +6,50 @@ h1 {
   font-size: 40px;
   text-shadow: 4px 4px 2px black;
   font-family: serif;
+  height: 250px;
+}
+
+#globe {
+  display: block;
+  margin: auto;
+  height: 200px;
+}
+
+@keyframes fadeinout {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+video {
+  /* margin-top: 2px; */
+  margin-left: 24px;
+  /* position: absolute; */
+}
+
+#scroll {
+  /* text-align: center; */
+  margin: auto;
+  height: 200px;
+  position: relative;
+  width: 140px;
+}
+
+#scrollimg {
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.dog {
+  position: absolute;
+  font-family: "Apple Chancery";
+  color: black;
+  font-size: 5px;
+  margin: 28px 24px;
 }
 
 #flexcont {
@@ -13,52 +57,8 @@ h1 {
 }
 
 body {
-  /* position: absolute;
-  z-index: -1;
-  width: 50%;
-  height: 150%; */
-  background-image: url("/assets/emma31.tripod.com/backs/bgnebula.gif");
-  /* background-image: url("/assets/emma31.tripod.com/backs/bgbluestars.gif"); */
-  /* background-image: url("/assets/emma31.tripod.com/backs/Galaxy0.gif"); */
-  /* background-image: url("/assets/emma31.tripod.com/backs/greensparkle.gif"); */
-  /* background-image: url("/assets/emma31.tripod.com/backs/purplestars.gif"); */
-  /* background-image: url("/assets/emma31.tripod.com/backs/design.gif"); */
+  /* background-image: url("/assets/emma31.tripod.com/backs/bgnebula.gif"); */
   background-image: url("/assets/emma31.tripod.com/backs/space2.gif");
-}
-
-body {
-  /* background-image: url("/assets/emma31.tripod.com/backs/space2.gif"); */
-}
-
-#otherbg {
-  position: absolute;
-  z-index: -1;
-  width: 50%;
-  height: 150%;
-  left: 50%;
-  /* background-image: url("/assets/img/backgrounds-with-emma/bgtancrack.gif"); */
-}
-
-#half {
-  width: 50%;
-  float: left;
-}
-
-#other {
-  left: 50%;
-  width: 50%;
-}
-
-.paper {
-  margin: auto;
-  margin-top: 32px;
-  padding: 20px 30px;
-  width: 60%;
-  max-width: 600px;
-  font-size: 12pt;
-  font-family: "Luminari";
-  background-color: aliceblue;
-  box-shadow: 8px 8px 2px black;
 }
 
 #welcome {
@@ -67,10 +67,6 @@ body {
 
 #welcomepic {
   width: 500px;
-}
-
-body {
-  margin: 0px;
 }
 
 #message {
@@ -85,6 +81,11 @@ body {
   width: 40%;
   max-width: 400px;
   border: 10px ridge limegreen;
+}
+
+#clique {
+  text-align: center;
+  color: white;
 }
 
 /* #links {
