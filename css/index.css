@@ -6,7 +6,11 @@ h1 {
   font-size: 40px;
   text-shadow: 4px 4px 2px black;
   font-family: serif;
-  height: 250px;
+}
+
+#top {
+  text-align: center;
+  margin-bottom: 150px;
 }
 
 #globe {
@@ -22,6 +26,10 @@ h1 {
   100% {
     opacity: 1;
   }
+}
+
+#bar {
+  text-align: center;
 }
 
 video {
@@ -84,7 +92,6 @@ body {
 }
 
 #clique {
-  text-align: center;
   color: white;
 }
 
