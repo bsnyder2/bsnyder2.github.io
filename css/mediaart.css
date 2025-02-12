@@ -1,0 +1,52 @@
+h1 {
+  text-align: center;
+  color: white;
+  margin-top: 0px;
+  padding-top: 0.67em;
+  font-size: 40px;
+  text-shadow: 4px 4px 2px black;
+  font-family: monospace;
+}
+
+#vid {
+  text-align: center;
+  height: 325px;
+}
+
+p {
+  color: white;
+  text-align: center;
+}
+
+ol {
+  color: white;
+}
+
+h2 {
+  color: white;
+}
+
+#everything {
+  max-width: 800px;
+  margin: auto;
+}
+
+
+
+body {
+  /* background-image: url("/assets/emma31.tripod.com/backs/bgnebula.gif"); */
+  background-image: url("/mediaart-assets/bgsteelcones.gif");
+}
+
+audio {
+  display: block;
+  margin: auto;
+}
+
+img {
+  width: 80%;
+  max-width: 600px;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+}
