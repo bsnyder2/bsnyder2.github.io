@@ -17,6 +17,10 @@ ol {
   color: white;
 }
 
+#ncs {
+  max-width: 300px;
+}
+
 h2 {
   color: white;
 }
@@ -38,7 +42,7 @@ audio {
 
 img {
   width: 80%;
-  max-width: 200px;
+  max-width: 150px;
   display: block;
   margin: auto;
   margin-top: 20px;
