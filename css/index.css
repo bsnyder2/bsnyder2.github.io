@@ -10,7 +10,7 @@ h1 {
 
 #top {
   text-align: center;
-  margin-bottom: 150px;
+  margin-bottom: 20px;
 }
 
 #globe {
@@ -18,6 +18,7 @@ h1 {
   margin: auto;
   height: 200px;
 }
+
 
 @keyframes fadeinout {
   0% {
@@ -66,7 +67,7 @@ video {
 
 body {
   /* background-image: url("/assets/emma31.tripod.com/backs/bgnebula.gif"); */
-  background-image: url("/assets/emma31.tripod.com/backs/space2.gif");
+  background-image: url("/assets/img/space2.gif");
 }
 
 #welcome {
@@ -99,14 +100,37 @@ body {
   float: left;
   margin-left: 5%;
 } */
-#emmabanner {
+footer {
+  margin-top: 140px;
   text-align: center;
 }
 
 #clipoftheweek {
   text-align: center;
 }
+#banner {
+  max-width: 440px;
+  width: 90%;
+}
+
+#linkz {
+  text-align: center;
+  list-style-type: none;
+  margin-top: 0;
+  margin-left: 0;
+  padding: 0;
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+#globearea {
+  margin-bottom: 20px;
+}
 
 /* * {
   outline: 1px solid red !important;
 } */
+
+a {
+  color: white;
+}
