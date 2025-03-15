@@ -1,3 +1,9 @@
+
+@font-face {
+  font-family: wds;
+  src: url(/fonts/Wingdings.ttf)
+}
+
 h1 {
   text-align: center;
   color: white;
@@ -5,7 +11,7 @@ h1 {
   padding-top: 0.67em;
   font-size: 40px;
   text-shadow: 4px 4px 2px black;
-  font-family: "Wingdings";
+  font-family: wds;
 }
 
 #top {
@@ -18,7 +24,6 @@ h1 {
   margin: auto;
   height: 200px;
 }
-
 
 @keyframes fadeinout {
   0% {
