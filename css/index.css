@@ -1,0 +1,77 @@
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+      background-image: url("/assets/img/emma-backs/backs/multihaze.gif");
+
+}
+
+#main-content {
+    margin: auto;
+    width: 100%;
+    background-color: black;
+}
+
+td {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.drawing {
+    width: 100%;
+    max-width: 150px;
+}
+
+
+#navbar {
+    height: 80px;
+    text-align: center;
+}
+
+#navbar-name {
+    background-color: black;
+    color: white;
+}
+
+#links {
+    display: inline-block;
+}
+
+#navbar #links a {
+    float: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.navbar-link {
+    font-family: 'Courier', monospace;
+    background-color: white;
+}
+
+#instagram-logo-wrapper {
+    display: inline-block;
+}
+
+#instagram-logo {
+    height: 50px;
+    float: center;
+}
+
+#github-logo-wrapper {
+    display: inline-block;
+}
+
+#github-logo {
+    height: 50px;
+    float: center;
+}
+
+#drawings-table {
+    margin: auto;
+    padding: 10px;
+}
+
+p {
+    float: left;
+}
