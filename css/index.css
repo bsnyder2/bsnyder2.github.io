@@ -1,32 +1,10 @@
-h1 {
-    font-family: 'Courier New', Courier, monospace;
-}
-
 body {
     background-image: url("/assets/img/emma-backs/backs/multihaze.gif");
     margin: 0;
 }
 
-#main-content {
-    margin: auto;
-    width: 100%;
-    background-color: black;
-}
 
-td {
-    padding-left: 6px;
-    padding-right: 6px;
-}
-
-.drawing {
-    width: 100%;
-    max-width: 150px;
-}
-
-#firstspace {
-    height: 90px;
-}
-
+/* Navbar */
 #navbar-wrapper {
     background-image: url("/assets/img/emma-backs/backs/multihaze.gif");
     height: 90px;
@@ -53,13 +31,13 @@ td {
     padding-right: 30px;
 }
 
+#logos {
+    margin-left: 10px;
+}
+
 #logos a {
     float: center;
     padding-left: 20px;
-}
-
-#logos {
-    margin-left: 10px;
 }
 
 .navbar-link {
@@ -78,36 +56,41 @@ td {
     float: center;
 }
 
-#drawings-table {
+
+/* Content */
+#main-content {
     margin: auto;
-    padding: 10px;
+    width: 100%;
+    background-color: black;
 }
 
-p {
-    float: left;
+td {
+    padding-left: 6px;
+    padding-right: 6px;
 }
 
+.drawing {
+    width: 100%;
+    max-width: 150px;
+}
 
 .drawing:hover{
-    /*
-    color: #424242; 
-  -webkit-transition: all .3 ease-in;
-  -moz-transition: all .3s ease-in;
-  -ms-transition: all .3s ease-in;
-  -o-transition: all .3s ease-in;
-  transition: all .3s ease-in;
-  opacity: 1;
-  transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  */
   outline-style: dashed;
   outline-color: yellow;
   outline-width: 4px;
 }
 
+#firstspace {
+    height: 90px;
+}
+
+#drawings-table {
+    margin: auto;
+    padding: 10px;
+}
 
 
+/* Overlay */
 #overlay {
     position: fixed;
     background-color: rgba(0, 0, 0, 0.8);
