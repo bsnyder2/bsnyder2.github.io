@@ -1,9 +1,3 @@
-// Load images into gallery from folder
-
-
-// Get all children
-
-const body = document.body;
 const drawings = document.querySelectorAll(".drawing");
 const placeholderWrapper = document.getElementById("placeholder-wrapper");
 const placeholder = document.getElementById("placeholder");
@@ -14,33 +8,11 @@ const arrowRight = document.getElementById("arrow-right");
 
 const logoImgs = document.querySelectorAll(".logo-img")
 const ticks = document.querySelectorAll(".tick");
-console.log("tick");
 
 
-backButton.addEventListener("click", (event) => {
-    placeholder.style.display = "none";
-    placeholderWrapper.style.display = "none";
-    overlay.style.display = "none";
-    backButton.style.display = "none";
-})
-
-
-// Allow overlapping tick sounds for selection
-let currentTick = 0;
-function playTick() {
-    currentTick = 0;
-    // If tick x already playing, play tick x+1
-    while (!ticks[currentTick].paused) {
-        currentTick++;
-    }
-    ticks[currentTick].play();
-}
-
-
+// Main content
 const drawingAddresses = [];
 let currentDrawingAddress = 0;
-
-// Get address for each image
 drawings.forEach(function(drawing) {
     const drawingAddress = drawing.getAttribute("src");
     drawingAddresses.push(drawingAddress);
@@ -58,9 +30,7 @@ drawings.forEach(function(drawing) {
     })
 });
 
-console.log(drawingAddresses);
-
-
+// Navbar
 const logoAddresses = ["assets/img/logos/instagram-logo.png", "assets/img/logos/instagram-logo-white.png",
                          "assets/img/logos/github-logo.png",  "assets/img/logos/github-logo-white.png",
                          "assets/img/logos/youtube-logo.png", "assets/img/logos/youtube-logo-white.png"]
@@ -73,6 +43,14 @@ for (let i = 0; i < logoAddresses.length / 2; i++) {
         logoImgs[i].setAttribute("src", logoAddresses[i * 2]);
     })
 }
+
+// Overlay buttons
+backButton.addEventListener("click", (event) => {
+    placeholder.style.display = "none";
+    placeholderWrapper.style.display = "none";
+    overlay.style.display = "none";
+    backButton.style.display = "none";
+})
 
 arrowLeft.addEventListener("click", (event) => {
     currentDrawingAddress--;
@@ -91,3 +69,14 @@ arrowRight.addEventListener("click", (event) => {
     placeholder.setAttribute("src", drawingAddresses[currentDrawingAddress]);
     playTick();
 })
+
+// Allow overlapping tick sounds for selection
+let currentTick = 0;
+function playTick() {
+    currentTick = 0;
+    // If tick x already playing, play tick x+1
+    while (!ticks[currentTick].paused) {
+        currentTick++;
+    }
+    ticks[currentTick].play();
+}
