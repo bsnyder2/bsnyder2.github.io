@@ -9,8 +9,11 @@ const placeholderWrapper = document.getElementById("placeholder-wrapper");
 const placeholder = document.getElementById("placeholder");
 const overlay = document.getElementById("overlay");
 const backButton = document.getElementById("back-button");
+const arrowLeft = document.getElementById("arrow-left");
+const arrowRight = document.getElementById("arrow-right");
+
 const logoImgs = document.querySelectorAll(".logo-img")
-const tick = document.getElementById("tick");
+const ticks = document.querySelectorAll(".tick");
 console.log("tick");
 
 
@@ -21,41 +24,70 @@ backButton.addEventListener("click", (event) => {
     backButton.style.display = "none";
 })
 
+
+// Allow overlapping tick sounds for selection
+let currentTick = 0;
+function playTick() {
+    currentTick = 0;
+    // If tick x already playing, play tick x+1
+    while (!ticks[currentTick].paused) {
+        currentTick++;
+    }
+    ticks[currentTick].play();
+}
+
+
+const drawingAddresses = [];
+let currentDrawingAddress = 0;
+
 // Get address for each image
 drawings.forEach(function(drawing) {
     const drawingAddress = drawing.getAttribute("src");
+    drawingAddresses.push(drawingAddress);
     drawing.addEventListener("click", (event) => {
         placeholder.setAttribute("src", drawingAddress);
+        currentDrawingAddress = drawingAddresses.indexOf(drawingAddress);
+        console.log(currentDrawingAddress);
         placeholderWrapper.style.display = "flex";
         placeholder.style.display = "inline";
         overlay.style.display = "inline";
         backButton.style.display = "inline";
     });
     drawing.addEventListener("mouseover", (event) => {
-        tick.play();
+        playTick();
     })
-    // const drawingClone = drawing.cloneNode(true);
-    // console.log(drawingClone);
-    // document.body.appendChild(drawingClone);
 });
+
+console.log(drawingAddresses);
+
 
 const logoAddresses = ["assets/img/logos/instagram-logo.png", "assets/img/logos/instagram-logo-white.png",
                          "assets/img/logos/github-logo.png",  "assets/img/logos/github-logo-white.png",
                          "assets/img/logos/youtube-logo.png", "assets/img/logos/youtube-logo-white.png"]
 
 for (let i = 0; i < logoAddresses.length / 2; i++) {
-    console.log(i);
     logoImgs[i].addEventListener("mouseover", (event) => {
-        console.log("hover");
         logoImgs[i].setAttribute("src", logoAddresses[i * 2 + 1]);
     })
     logoImgs[i].addEventListener("mouseout", (event) => {
-        console.log("hover");
         logoImgs[i].setAttribute("src", logoAddresses[i * 2]);
     })
 }
 
-logoImgs.forEach(function(logoImg) {
-
+arrowLeft.addEventListener("click", (event) => {
+    currentDrawingAddress--;
+    if (currentDrawingAddress < 0) {
+        currentDrawingAddress = drawingAddresses.length - 1;
+    }
+    placeholder.setAttribute("src", drawingAddresses[currentDrawingAddress]);
+    playTick();
 })
 
+arrowRight.addEventListener("click", (event) => {
+    currentDrawingAddress++;
+    if (currentDrawingAddress > drawingAddresses.length - 1) {
+        currentDrawingAddress = 0;
+    }
+    placeholder.setAttribute("src", drawingAddresses[currentDrawingAddress]);
+    playTick();
+})

@@ -12,22 +12,44 @@
 </head>
 
 <body>
-    <audio id="tick" autoplay>
+    <!-- Sounds -->
+    <audio class="tick">
         <source src="assets/audio/tick.wav" type="audio/wav">
     </audio>
 
+    <audio class="tick">
+        <source src="assets/audio/tick.wav" type="audio/wav">
+    </audio>
+
+    <audio class="tick">
+        <source src="assets/audio/tick.wav" type="audio/wav">
+    </audio>
+
+    <audio class="tick">
+        <source src="assets/audio/tick.wav" type="audio/wav">
+    </audio>
+
+    <!-- Overlay -->
     <img src="assets/img/gif/back.gif" id="back-button">
     <div id="overlay"></div>
     <div id="placeholder-wrapper">
+        <img src="assets/img/gif/arrow-left.gif" id="arrow-left">
+        <img src="assets/img/gif/arrow-right.gif" id="arrow-right">
+
         <img id="placeholder">
     </div>
 
+
+
+    <!-- Navbar -->
     <div id="navbar-wrapper">
         <div id="navbar">
             <span id="links">
                 <a class="navbar-link" id="navbar-name">Ben Snyder</a>
                 <a class="navbar-link">Drawings</a>
-                <a class="navbar-link">Software</a>
+                <span class="dropdown">
+                    <a class="navbar-link">Software</a>
+                </span>
                 <a class="navbar-link">Film</a>
             </span>
             <span id="logos">
@@ -45,6 +67,7 @@
     </div>
     <div id="firstspace"></div>
 
+    <!-- Content -->
     <div id="main-content">
         <div id="overlay"></div>
         <table id="drawings-table">
@@ -94,7 +117,6 @@
     </div>
 
     <script src="/js/index.js"></script>
-
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 body {
-    background-image: url("/assets/img/emma-backs/backs/multihaze.gif");
+    background-color: black;
     margin: 0;
 }
 
@@ -121,6 +121,24 @@ td {
     height: 100%;
 }
 
+#arrow-left {
+    position: inherit;
+    z-index: 15;
+    width: 10%;
+    position: inherit;
+    left: 20%;
+    image-rendering: pixelated;
+}
+
+#arrow-right {
+    position: inherit;
+    z-index: 15;
+    width: 10%;
+    position: inherit;
+    right: 20%;
+    image-rendering: pixelated;
+}
+
 #back-button {
     position: fixed;
     z-index: 15;
@@ -128,4 +146,6 @@ td {
     left: 40px;
     top: 30px;
     height: 40px;
+    image-rendering: pixelated;
 }
+
