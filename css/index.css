@@ -3,7 +3,6 @@ body {
     margin: 0;
 }
 
-
 /* Navbar */
 #navbar-wrapper {
     background-image: url("/assets/img/emma-backs/backs/multihaze.gif");
@@ -44,7 +43,9 @@ body {
 .navbar-link {
     font-family: 'Courier', monospace;
     background-color: white;
+    color: black;
     font-size: 18px;
+    text-decoration: none;
 }
 
 .navbar-link:hover {
@@ -57,8 +58,68 @@ body {
     float: center;
 }
 
+#firstspace {
+    height: 90px;
+}
 
-/* Content */
+/*
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0px;
+}
+
+.dropdown:hover .dropdown-content {
+    font-family: 'Courier', monospace;
+    background-color: white;
+    display: block;
+    font-size: 18px;
+    width: 100%;
+
+
+}
+*/
+
+@media only screen and (max-width: 750px) {
+    #navbar {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        top: 30px;
+        left: 40px;
+        transform: translateX(0%);
+        width: 220px;
+    }
+
+    #logos {
+        top: 15px;
+        width: 20px;
+    }
+    #logos a {
+        margin: 0px;
+    }
+
+    #logos a img {
+        width: 30px;
+        height: 30px;
+    }
+
+    #navbar-wrapper {
+        height: 130px;
+    }
+    #firstspace {
+        height:  130px;
+    }
+}
+
+
+
+
+/* Main content starts here */
 #main-content {
     margin: auto;
     width: 100%;
@@ -79,10 +140,6 @@ td {
   outline-style: dashed;
   outline-color: yellow;
   outline-width: 4px;
-}
-
-#firstspace {
-    height: 90px;
 }
 
 #drawings-table {
@@ -151,39 +208,7 @@ td {
     image-rendering: pixelated;
 }
 
-
-
 @media only screen and (max-width: 750px) {
-    #navbar {
-        position: fixed;
-        display: flex;
-        align-items: center;
-        top: 30px;
-        left: 40px;
-        transform: translateX(0%);
-        width: 220px;
-    }
-
-    #logos {
-        top: 15px;
-        width: 20px;
-    }
-    #logos a {
-        margin: 0px;
-    }
-
-    #logos a img {
-        width: 30px;
-        height: 30px;
-    }
-
-    #navbar-wrapper {
-        height: 130px;
-    }
-    #firstspace {
-        height:  130px;
-    }
-
     #placeholder {
         width: 90%;
         max-width: 300px;

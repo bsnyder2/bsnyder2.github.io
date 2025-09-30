@@ -1,0 +1,122 @@
+body {
+    background-color: black;
+    margin: 0;
+}
+
+/* Navbar */
+#navbar-wrapper {
+    background-image: url("/assets/img/emma-backs/backs/multihaze.gif");
+    height: 90px;
+    position: fixed;
+    width: 100%;
+}
+
+#navbar {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#navbar-name {
+    background-color: black;
+    color: white;
+}
+
+#links a {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#logos {
+    position: inherit;
+    top: 20px;
+    right: 40px;
+}
+
+#logos a {
+    margin-left: 20px;
+}
+
+.navbar-link {
+    font-family: 'Courier', monospace;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.navbar-link:hover {
+    background-color: black;
+    color: white;
+}
+
+.logo-img {
+    height: 40px;
+    float: center;
+}
+
+#firstspace {
+    height: 90px;
+}
+
+/*
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0px;
+}
+
+.dropdown:hover .dropdown-content {
+    font-family: 'Courier', monospace;
+    background-color: white;
+    display: block;
+    font-size: 18px;
+    width: 100%;
+
+
+}
+*/
+
+@media only screen and (max-width: 750px) {
+    #navbar {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        top: 30px;
+        left: 40px;
+        transform: translateX(0%);
+        width: 220px;
+    }
+
+    #logos {
+        top: 15px;
+        width: 20px;
+    }
+    #logos a {
+        margin: 0px;
+    }
+
+    #logos a img {
+        width: 30px;
+        height: 30px;
+    }
+
+    #navbar-wrapper {
+        height: 130px;
+    }
+    #firstspace {
+        height:  130px;
+    }
+}
+
+
+
+
+/* Main content starts here */
