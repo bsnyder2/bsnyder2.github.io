@@ -14,10 +14,11 @@ body {
 
 #navbar {
     position: fixed;
-    left: 24%;
     display: flex;
     align-items: center;
     top: 20px;
+    left: 25%;
+    transform: translateX(-25%);
 }
 
 #navbar-name {
@@ -26,7 +27,6 @@ body {
 }
 
 #links a {
-    float: center;
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -36,8 +36,7 @@ body {
 }
 
 #logos a {
-    float: center;
-    padding-left: 20px;
+    margin-left: 20px;
 }
 
 .navbar-link {
