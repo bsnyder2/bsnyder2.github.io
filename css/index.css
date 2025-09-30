@@ -126,7 +126,7 @@ td {
 #arrow-left {
     position: inherit;
     z-index: 15;
-    width: 10%;
+    width: 120px;
     position: inherit;
     left: 20%;
     image-rendering: pixelated;
@@ -135,7 +135,7 @@ td {
 #arrow-right {
     position: inherit;
     z-index: 15;
-    width: 10%;
+    width: 120px;
     position: inherit;
     right: 20%;
     image-rendering: pixelated;
