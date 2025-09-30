@@ -1,5 +1,6 @@
 const drawings = document.querySelectorAll(".drawing");
 const placeholderWrapper = document.getElementById("placeholder-wrapper");
+const arrowsWrapper = document.getElementById("arrows-wrapper");
 const placeholder = document.getElementById("placeholder");
 const overlay = document.getElementById("overlay");
 const backButton = document.getElementById("back-button");

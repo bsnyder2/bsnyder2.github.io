@@ -16,9 +16,9 @@ body {
     position: fixed;
     display: flex;
     align-items: center;
-    top: 20px;
-    left: 25%;
-    transform: translateX(-25%);
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #navbar-name {
@@ -32,7 +32,9 @@ body {
 }
 
 #logos {
-    margin-left: 10px;
+    position: inherit;
+    top: 20px;
+    right: 40px;
 }
 
 #logos a {
@@ -144,7 +146,40 @@ td {
     display: none;
     left: 40px;
     top: 30px;
-    height: 40px;
+    width: 80px;
     image-rendering: pixelated;
 }
 
+
+
+@media only screen and (max-width: 750px) {
+    #navbar {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        top: 30px;
+        left: 40px;
+        transform: translateX(0%);
+        width: 220px;
+    }
+
+    #logos {
+        top: 15px;
+        width: 20px;
+    }
+    #logos a {
+        margin: 0px;
+    }
+
+    #logos a img {
+        width: 30px;
+        height: 30px;
+    }
+
+    #navbar-wrapper {
+        height: 130px;
+    }
+    #firstspace {
+        height:  130px;
+    }
+}
