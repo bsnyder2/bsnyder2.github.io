@@ -1,4 +1,33 @@
-const drawings = document.querySelectorAll(".drawing");
+// Main content
+const NUM_IMAGES = 21;
+const PER_ROW = 4;
+
+// Drawing addresses
+let currentDrawingAddress = 0;
+const drawingAddresses = [];
+
+function fillDrawings() {
+    const tbody = document.getElementById("drawings-table").children[0];
+    let imgId = 1;
+    while (true) {
+        const row = document.createElement("tr");
+        tbody.appendChild(row);
+        for (let i = 0; i < PER_ROW; i++) {
+            if (imgId > NUM_IMAGES) return;
+            const td = document.createElement("td");
+            row.appendChild(td);
+            const img = document.createElement("img");
+            img.setAttribute("src", `/assets/img/drawings/${imgId}.jpg`)
+            img.setAttribute("class", "drawing");
+            td.appendChild(img);
+            imgId++;
+        }
+    }
+}
+
+fillDrawings();
+loadDrawingAddresses();
+
 const placeholderWrapper = document.getElementById("placeholder-wrapper");
 const arrowsWrapper = document.getElementById("arrows-wrapper");
 const placeholder = document.getElementById("placeholder");
@@ -11,51 +40,25 @@ const logoImgs = document.querySelectorAll(".logo-img");
 const ticks = document.querySelectorAll(".tick");
 
 
-// Main content
-const fileReader = new FileReader();
-
-
-
-const perRow = 4;
-const tbody = document.getElementById("drawings-table").children[0];
-
-
-let imgId = 1;
-numImages = 10;
-while (imgId < numImages) {
-    const row = document.createElement("tr");
-    tbody.appendChild(row);
-    for (let i = 0; i < perRow; i++) {
-        if (imgId > numImages) break;
-        const td = document.createElement("td");
-        row.appendChild(td);
-        const img = document.createElement("img");
-        img.setAttribute("src", `/assets/img/drawings/${imgId}.jpg`)
-        img.setAttribute("class", "drawing");
-        td.appendChild(img);
-        imgId++;
-    }
-}
-
-
-const drawingAddresses = [];
-let currentDrawingAddress = 0;
-drawings.forEach(function(drawing) {
-    const drawingAddress = drawing.getAttribute("src");
-    drawingAddresses.push(drawingAddress);
-    drawing.addEventListener("click", (event) => {
-        placeholder.setAttribute("src", drawingAddress);
-        currentDrawingAddress = drawingAddresses.indexOf(drawingAddress);
-        console.log(currentDrawingAddress);
-        placeholderWrapper.style.display = "flex";
-        placeholder.style.display = "inline";
-        overlay.style.display = "inline";
-        backButton.style.display = "inline";
+function loadDrawingAddresses() {
+    const drawings = document.querySelectorAll(".drawing");
+    drawings.forEach(function(drawing) {
+        const drawingAddress = drawing.getAttribute("src");
+        drawingAddresses.push(drawingAddress);
+        drawing.addEventListener("click", (event) => {
+            placeholder.setAttribute("src", drawingAddress);
+            currentDrawingAddress = drawingAddresses.indexOf(drawingAddress);
+            console.log(currentDrawingAddress);
+            placeholderWrapper.style.display = "flex";
+            placeholder.style.display = "inline";
+            overlay.style.display = "inline";
+            backButton.style.display = "inline";
+        });
+        drawing.addEventListener("mouseover", (event) => {
+            playTick();
+        })
     });
-    drawing.addEventListener("mouseover", (event) => {
-        playTick();
-    })
-});
+}
 
 // Navbar
 const logoAddresses = ["assets/img/logos/instagram-logo.png", "assets/img/logos/instagram-logo-white.png",
