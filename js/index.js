@@ -7,11 +7,37 @@ const backButton = document.getElementById("back-button");
 const arrowLeft = document.getElementById("arrow-left");
 const arrowRight = document.getElementById("arrow-right");
 
-const logoImgs = document.querySelectorAll(".logo-img")
+const logoImgs = document.querySelectorAll(".logo-img");
 const ticks = document.querySelectorAll(".tick");
 
 
 // Main content
+const fileReader = new FileReader();
+
+
+
+const perRow = 4;
+const tbody = document.getElementById("drawings-table").children[0];
+
+
+let imgId = 1;
+numImages = 10;
+while (imgId < numImages) {
+    const row = document.createElement("tr");
+    tbody.appendChild(row);
+    for (let i = 0; i < perRow; i++) {
+        if (imgId > numImages) break;
+        const td = document.createElement("td");
+        row.appendChild(td);
+        const img = document.createElement("img");
+        img.setAttribute("src", `/assets/img/drawings/${imgId}.jpg`)
+        img.setAttribute("class", "drawing");
+        td.appendChild(img);
+        imgId++;
+    }
+}
+
+
 const drawingAddresses = [];
 let currentDrawingAddress = 0;
 drawings.forEach(function(drawing) {
