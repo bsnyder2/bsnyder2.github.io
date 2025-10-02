@@ -8,22 +8,25 @@ const drawingAddresses = [];
 
 function fillDrawings() {
     const tbody = document.getElementById("drawings-table").children[0];
-    let imgId = 1;
+    let imgId = NUM_IMAGES;
     while (true) {
         const row = document.createElement("tr");
         tbody.appendChild(row);
         for (let i = 0; i < PER_ROW; i++) {
-            if (imgId > NUM_IMAGES) return;
+            if (imgId <= 0) return;
             const td = document.createElement("td");
             row.appendChild(td);
             const img = document.createElement("img");
             img.setAttribute("src", `/assets/img/drawings/${imgId}.jpg`)
             img.setAttribute("class", "drawing");
             td.appendChild(img);
-            imgId++;
+            imgId--;
         }
     }
 }
+
+console.log(window);
+console.log(window.screen.width);
 
 fillDrawings();
 loadDrawingAddresses();
