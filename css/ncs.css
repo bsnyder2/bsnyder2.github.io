@@ -1,0 +1,54 @@
+h1 {
+  text-align: center;
+  color: white;
+  margin-top: 0px;
+  padding-top: 0.67em;
+  font-size: 40px;
+  text-shadow: 4px 4px 2px black;
+  font-family: "Papyrus";
+}
+
+p {
+  color: white;
+  text-align: center;
+}
+
+ol {
+  color: white;
+  font-family: "Papyrus";
+}
+
+#ncs {
+  max-width: 300px;
+}
+
+h2 {
+  color: white;
+}
+
+#everything {
+  max-width: 800px;
+  margin: auto;
+}
+
+body {
+  background-image: url("/assets/img/emma-backs/backs/bgsunsetred.gif");
+  /* background-image: url("/assets/img/space2.gif"); */
+}
+
+audio {
+  display: block;
+  margin: auto;
+}
+
+#star {
+  max-width: 150px;
+}
+
+img {
+  width: 80%;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
