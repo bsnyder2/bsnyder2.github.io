@@ -40,6 +40,10 @@ body {
     margin-left: 20px;
 }
 
+#logos a img {
+    padding-bottom: 3px;
+}
+
 .navbar-link {
     font-family: 'Courier', monospace;
     background-color: white;
@@ -62,6 +66,9 @@ body {
     height: 90px;
 }
 
+
+/* Dropdown */
+
 /*
 .dropdown {
     position: relative;
@@ -70,7 +77,6 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-    left: 0px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -79,10 +85,8 @@ body {
     display: block;
     font-size: 18px;
     width: 100%;
+} */
 
-
-}
-*/
 
 @media only screen and (max-width: 750px) {
     #navbar {
@@ -98,14 +102,15 @@ body {
     #logos {
         top: 15px;
         width: 20px;
+        right: 35px;
     }
     #logos a {
         margin: 0px;
     }
 
     #logos a img {
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 35px;
     }
 
     #navbar-wrapper {
