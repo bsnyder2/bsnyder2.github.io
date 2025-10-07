@@ -1,5 +1,5 @@
 // Main content
-const NUM_IMAGES = 21;
+const NUM_IMAGES = 23;
 const PER_ROW = 4;
 
 // Drawing addresses
