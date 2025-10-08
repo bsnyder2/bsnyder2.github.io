@@ -40,8 +40,15 @@ body {
     margin-left: 20px;
 }
 
-#logos a img {
-    padding-bottom: 3px;
+
+#logos a img:hover {
+    box-shadow: 0px 0px 10px #fff;
+    border-radius: 50%;
+}
+
+.logo-img-wrapper {
+    margin-bottom: 3px;
+    display: inline-block;
 }
 
 .navbar-link {
@@ -207,9 +214,9 @@ td {
     position: fixed;
     z-index: 15;
     display: none;
-    left: 40px;
+    right: 60px;
     top: 30px;
-    width: 80px; /* 80 px */
+    width: 60px; /* 80 px */
     image-rendering: pixelated;
 }
 
@@ -233,9 +240,9 @@ td {
         image-rendering: pixelated;
     }
 
-    #back-button {
-        left: calc(50% - 40px);
-        top: 10%;
-        width: 80px; /* 80 px */
+   #back-button {
+        right: 40px;
+        top: 40px;
+        width: 60px; /* 80 px */
     }
 }

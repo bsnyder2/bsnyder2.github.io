@@ -64,9 +64,9 @@ function loadDrawingAddresses() {
 }
 
 // Navbar
-const logoAddresses = ["assets/img/logos/instagram-logo.png", "assets/img/logos/instagram-logo-white.png",
-                         "assets/img/logos/github-logo.png",  "assets/img/logos/github-logo-white.png",
-                         "assets/img/logos/youtube-logo.png", "assets/img/logos/youtube-logo-white.png"]
+const logoAddresses = ["assets/img/logos/instagram-logo-white.png", "assets/img/logos/instagram-logo.png",
+                         "assets/img/logos/github-logo-white.png",  "assets/img/logos/github-logo.png",
+                         "assets/img/logos/youtube-logo-white.png", "assets/img/logos/youtube-logo.png"]
 
 for (let i = 0; i < logoAddresses.length / 2; i++) {
     logoImgs[i].addEventListener("mouseover", (event) => {
